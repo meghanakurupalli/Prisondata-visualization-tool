@@ -1,0 +1,173 @@
+acronym,country,population,rate,females,juveniles,occupancy,government
+AFG,Afghanistan,27527,75,0.028,0.04,1.9,Presidential Islamic Republic
+ALB,Albania,5447,189,0.019,0.012,1.058,Parliamentary Republic
+DZA,Algeria,61000,155,0.017,0.007,0.893,Presidential Republic
+AGO,Angola,24165,96,0.036,,1.108,Presidential Republic
+ARG,Argentina,72693,167,0.041,0,1.062,Presidential Republic
+ARM,Armenia,4873,162,0.044,0.002,1.063,Parliamentary Democracy
+AUS,Australia,41237,168,0.081,0.001,0.96,Parliamentary Democracy
+AUT,Austria,8290,94,0.057,0.014,0.949,Federal Parliamentary Republic
+AZE,Azerbaijan,23311,239,0.031,0.003,0.949,Presidential Republic
+BHS,Bahamas,1727,439,0.032,,1.727,Parliamentary Democracy
+BGD,Bangladesh,78578,48,0.038,0.004,2.146,Parliamentary Republic
+BLR,Belarus,29776,314,0.075,0.003,0.834,Presidential Republic/Dictatorship
+BEL,Belgium,10619,94,0.046,0.006,1.096,Federal Parliamentary Democracy
+BLZ,Belize,1297,356,0.035,0.031,0.873,Parliamentary Democracy
+BEN,Benin,7067,67,0.05,0.021,2.4,Presidential Republic
+BTN,Bhutan,1119,145,0.043,0.034,,Constitutional Monarchy
+BOL,"Bolivia, Plurinational State of",14598,,0.082,0.129,2.539,Presidential Republic
+BIH,Bosnia and Herzegovina,1722,73,0.029,0.002,1.021,Parliamentary Republic
+BWA,Botswana,4376,210,0.018,0.104,1.009,Parliamentary Republic
+BRA,Brazil,657680,318,0.069,0,1.639,Federal Presidential Republic
+BRN,Brunei Darussalam,565,134,0.073,0.004,1.328,Absolute Monarchy or Sultanate
+BGR,Bulgaria,9028,125,0.032,0.008,0.856,Parliamentary Republic
+BFA,Burkina Faso,7544,41,0.015,0.032,1.886,Presidential Republic
+BDI,Burundi,10049,86,0.045,0.023,2.396,Presidential Republic
+KHM,Cambodia,25500,159,0.08,0.041,2.061,Parliamentary Constitutional Monarchy
+CMR,Cameroon,27997,115,0.027,0.029,1.578,Presidential Republic
+CAN,Canada,41145,114,0.056,0.026,1.022,Federal Parliamentary Democracy
+CAF,Central African Republic,764,16,0.082,,,Presidential Republic
+TCD,Chad,4831,39,0.028,0.033,2.323,Presidential Republic
+CHL,Chile,42931,236,0.089,0.004,1.109,Presidential Republic
+CHN,China,1649804,118,0.065,0.008,,Communist State
+COL,Colombia,115708,227,0.066,0,1.464,Presidential Republic
+COD,Democratic Republic of Congo,20550,29,0.03,,5.33,Unitary Semi-Presidential Republic
+COG,Congo,1240,27,0.037,0.044,5.33,Unitary Semi-Presidential Republic
+CRI,Costa Rica,19226,374,0.054,0.016,1.394,Presidential Republic
+HRV,Croatia,3228,78,0.041,0.007,0.803,Parliamentary Republic
+CUB,Cuba,57337,510,,,,Communist State
+CYP,Cyprus,654,77,0.067,0.015,0.973,Presidential Democracy
+CZE,Czech Republic,22508,212,0.074,0.004,1.065,--
+CIV,Côte d'Ivoire,11192,51,0.021,0.017,2.18,Presidential Republic
+DNK,Denmark,3418,59,0.04,0.003,0.952,Parliamentary Constitutional Monarchy
+DJI,Djibouti,600,66,0.05,0.05,1.714,Semi-Presidential Republic
+DOM,Dominican Republic,26796,245,0.026,0.023,1.885,Presidential Republic
+ECU,Ecuador,26421,160,0.077,0.021,1.144,Presidential Republic
+EGY,Egypt,106000,116,0.037,,,Presidential Republic
+SLV,El Salvador,38893,597,0.099,0,3.482,Presidential Republic
+GNQ,Equatorial Guinea,500,63,0.05,,,Presidential Republic
+ERI,Eritrea,,,,,,Unitary Presidential Republic
+EST,Estonia,2774,210,0.055,0.008,0.833,Parliamentary Republic
+ETH,Ethiopia,113727,127,0.042,,,Federal Parliamentary Republic
+FJI,Fiji,1423,158,0.052,0.007,1.037,Parliamentary Republic
+FIN,Finland,3174,57,0.077,0.003,1.058,Parliamentary Republic
+FRA,France,70018,103,0.035,0.012,1.185,Semi-Presidential Republic
+GUF,Franch Guyana,840,305,0.106,0.012,1.37,--
+GAB,Gabon,3373,191,0.035,0.029,,Presidential Republic
+GMB,Gambia,1121,58,0.025,0.013,1.725,Presidential Republic
+GEO,Georgia,9451,254,0.029,0.003,0.456,Semi-Presidential Republic
+DEU,Germany,64193,77,0.058,0.069,0.874,Federal Parliamentary Republic
+GHA,Ghana,13764,49,0.012,0.009,1.394,Presidential Republic
+GNB,Guinea-Bissau,196,10,0.026,0.026,1.022,Presidential Republic
+GRC,Greece,9789,91,0.055,0.029,0.99,Parliamentary Republic
+GRL,Greenland,126,226,0.138,0,0.753,Parliamentary Democracy
+GTM,Guatemala,22907,134,0.103,0.046,2.962,Presidential Republic
+GIN,Guinea,2900,23,0.037,0.063,1.748,Presidential Republic
+GUY,Guyana,2113,278,0.035,0.007,1.288,Parliamentary Republic
+HTI,Haiti,10500,96,0.041,0.024,4.544,Semi-Presidential Republic
+HND,Honduras,17253,200,0.043,,1.628,Presidential Republic
+HUN,Hungary,17963,184,0.075,0.004,1.29,Parliamentary Republic
+ISL,Iceland,131,38,0.061,0,0.862,Parliamentary Republic
+IND,India,419623,33,0.043,0,1.144,Federal Parliamentary Republic
+IDN,Indonesia,225025,86,0.055,0.032,1.827,Republic
+IRN,Iran,225624,,0.031,0.005,1.612,Republic
+IRQ,Iraq,42880,123,0.026,0.036,1.392,Republic
+IRL,Ireland,3593,75,0.038,0.01,0.841,Republic
+ISR,Israel,21072,265,0.01,0.027,0.801,Republic
+ITA,Italy,57661,95,0.042,0.003,1.142,Republic
+JAM,Jamaica,3866,138,0.047,0.052,0.888,Constituitional Monarchy
+JPN,Japan,56805,45,0.084,0,0.668,Constituitional Monarchy
+JOR,Jordan,11489,150,0.04,,0.693,Constituitional Monarchy
+KAZ,Kazakhstan,36343,202,0.076,0.002,0.689,Republic
+KEN,Kenya,53841,114,0.074,0.012,2.017,Republic
+KOS,Kosovo,1849,106,0.025,0.034,0.87,Republic
+KWT,Kuwait,5400,147,0.025,,0.87,Constituitional Monarchy
+KGZ,Kyrgyzstan,10195,166,0.042,0.004,0.585,Republic
+LAO,Lao People's Democratic Republic,8201,119,0.183,,,Republic
+LVA,Latvia,4243,218,0.082,0.01,0.753,Republic
+LBN,Lebanon,6500,128,0.046,0.024,1.857,Republic
+LSO,Lesotho,2073,92,0.036,0.024,0.706,Constitutional Monarchy
+LBR,Liberia,2023,44,0.013,0.01,1.657,Republic
+LBY,Libya,6187,99,0.012,,1.416,--
+LTU,Lithuania,6616,235,0.049,0.007,0.826,Republic
+LUX,Luxembourg,690,115,0.055,0.009,0.97,Constituitional Monarchy
+MKD,Macedonia,3222,156,0.032,0.007,1.323,Republic
+MDG,Madagascar,22000,88,0.045,0.034,1.93,Republic
+MWI,Malawi,14018,79,0.011,0.077,2.003,Republic
+MYS,Malaysia,51602,167,0.069,0.022,1.139,Constitutional Monarchy
+MLI,Mali,5209,33,0.028,0.013,2.233,Republic
+MRT,Mauritania,1768,44,0.012,0.031,1.019,Republic
+MEX,Mexico,208689,169,0.052,0.043,0.979,Executive Republic
+MDA,Moldova,7868,222,0.082,0.003,0.909,Ceremonial Republic
+MNG,Mongolia,7690,262,0.051,0.009,1.244,Executive Republic
+MNE,Montenegro,1131,182,0.031,0.004,0.838,Ceremonial Republic
+MAR,Morocco,80000,227,0.023,0.027,1.578,Executive Constitutional Monarchy
+MOZ,Mozambique,15976,57,0.029,0.086,1.951,Executive Republic
+MMR,Myanmar,79668,145,0.123,0.016,1.443,Executive Republic
+NAM,Namibia,3742,149,0.029,0.002,0.727,Executive Republic
+NPL,Nepal,18881,65,0.073,0.055,1.78,Ceremonial Republic
+NLD,Netherlands,10102,59,0.054,0.012,0.681,Ceremonial Constitutional Monarchy
+NCL,New Caledonia,549,204,0.015,0.031,1.366,French Republic
+NZL,New Zealand,10260,214,0.074,0.006,1.061,Ceremonial Constitutional Monarchy
+NIC,Nicaragua,10569,171,0.054,0.006,1.28,Executive Republic
+NER,Niger,8525,44,0.043,,0.604,Executive Republic
+NGA,Nigeria,68259,36,0.02,0.017,1.259,Executive Republic
+PRK,North Korea,100000,,,,,Executive Republic
+NOR,Norway,3933,74,0.064,0.001,0.952,Ceremonial Constitutional Monarchy
+OMN,Oman,1300,36,0.045,0.038,,Executive Absolute Monarchy
+PAK,Pakistan,84315,44,0.018,0.017,1.716,Ceremonial Republic
+PAN,Panama,16151,393,0.055,0,1.139,Executive Republic
+PNG,Papua New Guinea,4945,63,0.05,0.039,1.187,Ceremonial Consititutional Monarchy
+PRY,Paraguay,12741,180,0.065,0.028,1.786,Executive Republic
+PER,Peru,84741,265,0.058,0,2.293,Executive Republic
+PHL,Philippines,178661,172,0.089,0.004,4.36,Executive Republic
+POL,Poland,73717,194,0.038,0.004,0.9,Executive Republic
+PRT,Portugal,13726,133,0.064,0.001,1.069,Executive Republic
+PRI,Puerto Rico,10475,313,0.036,0.037,0.736,Executive Republic
+QAT,Qatar,1150,53,0.147,0,,Executive Absolute Monarchy
+ROU,Romania,26529,135,0.051,0.013,0.956,Executive Republic
+RUS,Russian Federation,609485,421,0.079,0.002,0.79,Executive Republic
+RWA,Rwanda,54279,434,0.065,0.004,0.956,Executive Republic
+SAU,Saudi Arabia,47000,161,0.057,0.009,,Executive Absolute Monarchy
+SEN,Senegal,9422,60,0.029,0.02,1.173,Executive Republic
+SRB,Serbia,10065,142,0.036,0.01,1.064,Cermonial Republic
+SLE,Sierra Leone,4179,64,0.033,0,2.16,Executive Republic
+SVK,Slovakia,10247,188,0.07,0.008,0.937,Ceremonial Republic
+SVN,Slovenia,1316,64,0.074,0.005,0.983,Ceremonial Republic
+SLB,Solomon Islands,435,73,0.014,0.059,0.606,Ceremonial Constitutional Monarchy
+SOL,Somaliland,2000,,,,,Presidential Constitutional Republic
+SOM,Somalia,3700,,,,,Federal Parliamentary Republic
+ZAF,South Africa,161984,291,0.026,0.002,1.327,Executive Republic
+KOR,South Korea,57451,114,0.065,0.008,1.133,Executive Republic
+ESP,Spain,59678,128,0.075,0,0.809,Ceremonial Constitutional Monarchy
+LKA,Sri Lanka,16990,78,0.049,0.001,1.906,Executive Republic
+SDN,Sudan,19101,50,0.02,0.02,2.553,Executive Republic
+SSD,South Sudan,6504,52,0.109,,3.2925,Constitutional Republic
+SUR,Suriname,1000,183,0.028,0.057,0.752,Executive Republic
+SWZ,Swaziland,3610,282,0.029,0.007,1.272,Executive Absolute Monarchy
+SWE,Sweden,5630,57,0.061,0.003,0.842,Ceremonial Constitutional Monarchy
+CHE,Switzerland,6912,82,0.056,0.003,0.922,Executive Republic
+SYR,Syrian Arab Republic,10599,60,0.074,,0.656,Executive Republic
+TWN,Taiwan,62445,265,0.087,0.025,1.148,Constitutional Republic
+TJK,Tajikistan,9317,121,0.016,0.01,0.615,Executive Republic
+TZA,Tanzania,31382,58,0.034,0.039,1.157,Executive Republic
+THA,Thailand,312855,462,0.131,,1.448,--
+TLS,Timor-Leste,669,56,0.04,0.055,1.373,Constitutional Republic
+TGO,Togo,4427,62,0.027,0.009,1.628,Executive Republic
+TTO,Trinidad and Tobago,3667,270,0.026,0.048,0.751,Ceremonial Republic
+TUN,Tunisia,23553,206,0.028,0.01,1.389,Executive Republic
+TUR,Turkey,229790,285,0.043,0.012,1.108,Ceremonial Republic
+TKM,Turkmenistan,30568,583,0.065,0.007,0.85,Executive Republic
+UGA,Uganda,54059,129,0.044,0,2.932,Executive Republic
+UKR,Ukraine,60771,167,0.046,0.007,0.63,Executive Republic
+ARE,United Arab Emirates,9826,104,0.117,0.02,1.589,Executive Absolute Monarchy
+GBR,United Kingdom,95284,360,0.0447,0.0047,0.972,Ceremonial Constitutional Monarchy
+USA,United States,2145100,666,0.098,0.002,1.039,Executive Republic
+URY,Uruguay,11078,321,0.053,0,1.121,Executive Republic
+UZB,Uzbekistan,43900,150,,,0.8,Executive Republic
+VEN,Venezuela,54738,173,0.05,0,1.539,Executive Republic
+VNM,Viet Nam,115035,122,0.101,,,Executive Republic
+SAH,Western Sahara,,,,,,Disputed
+YEM,Yemen,14000,53,0.016,0.019,,Provisional Government
+ZMB,Zambia,25000,160,0.01,0.025,3.03,Executive Republic
+ZWE,Zimbabwe,19521,120,0.022,0.005,1.109,Executive Republic

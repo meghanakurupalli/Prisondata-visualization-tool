@@ -1,0 +1,139 @@
+acronym,country,population,rate,females,juveniles,occupancy,government,pretrial,institutions,src
+AFG,Afghanistan,27527,75,0.028,0.04,1.9,Presidential Islamic Republic,31.3,251,csv
+ALB,Albania,5447,189,0.019,0.012,1.058,Parliamentary Republic,51.8,23,csv
+DZA,Algeria,61000,155,0.017,0.007,0.893,Presidential Republic,6.7,131,csv
+ARG,Argentina,72693,167,0.041,0,1.062,Presidential Republic,50.1,285,csv
+ARM,Armenia,4873,162,0.044,0.002,1.063,Parliamentary Democracy,28.7,11,csv
+AUS,Australia,41237,168,0.081,0.001,0.96,Parliamentary Democracy,31.2,111,csv
+AUT,Austria,8290,94,0.057,0.014,0.949,Federal Parliamentary Republic,22,27,csv
+AZE,Azerbaijan,23311,239,0.031,0.003,0.949,Presidential Republic,18.3,53,csv
+BGD,Bangladesh,78578,48,0.038,0.004,2.146,Parliamentary Republic,74,68,csv
+BLR,Belarus,29776,314,0.075,0.003,0.834,Presidential Republic/Dictatorship,14.3,34,csv
+BEL,Belgium,10619,94,0.046,0.006,1.096,Federal Parliamentary Democracy,31.7,35,csv
+BLZ,Belize,1297,356,0.035,0.031,0.873,Parliamentary Democracy,30.1,1,csv
+BEN,Benin,7067,67,0.05,0.021,2.4,Presidential Republic,74.9,9,csv
+BOL,Bolivia,14598,156,0.082,0.129,2.539,Presidential Republic,69,61,csv
+BIH,Bosnia and Herzegovina,1722,73,0.029,0.002,1.021,Parliamentary Republic,0,0,json
+BWA,Botswana,4376,210,0.018,0.104,1.009,Parliamentary Republic,24.5,23,csv
+BRA,Brazil,657680,318,0.069,0,1.639,Federal Presidential Republic,36.8,1424,csv
+BRN,Brunei Darussalam,565,134,0.073,0.004,1.328,Absolute Monarchy or Sultanate,7.1,3,csv
+BGR,Bulgaria,9028,125,0.032,0.008,0.856,Parliamentary Republic,21.1,55,csv
+BFA,Burkina Faso,7544,41,0.015,0.032,1.886,Presidential Republic,44.4,25,csv
+BDI,Burundi,10049,86,0.045,0.023,2.396,Presidential Republic,50.4,11,csv
+KHM,Cambodia,25500,159,0.08,0.041,2.061,Parliamentary Constitutional Monarchy,70.6,28,csv
+CMR,Cameroon,27997,115,0.027,0.029,1.578,Presidential Republic,55.8,78,csv
+CAN,Canada,41145,114,0.056,0.026,1.022,Federal Parliamentary Democracy,34.9,216,csv
+TCD,Chad,4831,39,0.028,0.033,2.323,Presidential Republic,63.4,45,csv
+CHL,Chile,42931,236,0.089,0.004,1.109,Presidential Republic,35.7,103,csv
+COL,Colombia,115708,227,0.066,0,1.464,Presidential Republic,30.7,136,csv
+CRI,Costa Rica,19226,374,0.054,0.016,1.394,Presidential Republic,17.2,33,csv
+CIV,Côte d'Ivoire,11192,51,0.021,0.017,2.18,Presidential Republic,39,34,csv
+HRV,Croatia,3228,78,0.041,0.007,0.803,Parliamentary Republic,24.5,23,csv
+CYP,Cyprus,654,77,0.067,0.015,0.973,Presidential Democracy,0,0,json
+CZE,Czech Republic,22508,212,0.074,0.004,1.065,NA,8.1,35,csv
+DNK,Denmark,3418,59,0.04,0.003,0.952,Parliamentary Constitutional Monarchy,31.1,57,csv
+DJI,Djibouti,600,66,0.05,0.05,1.714,Semi-Presidential Republic,20,2,csv
+DOM,Dominican Republic,26796,245,0.026,0.023,1.885,Presidential Republic,60.2,38,csv
+ECU,Ecuador,26421,160,0.077,0.021,1.144,Presidential Republic,48.8,52,csv
+SLV,El Salvador,38893,597,0.099,0,3.482,Presidential Republic,33.7,25,csv
+EST,Estonia,2774,210,0.055,0.008,0.833,Parliamentary Republic,21.6,4,csv
+FJI,Fiji,1423,158,0.052,0.007,1.037,Parliamentary Republic,24.1,13,csv
+FIN,Finland,3174,57,0.077,0.003,1.058,Parliamentary Republic,20.7,26,csv
+FRA,France,70018,103,0.035,0.012,1.185,Semi-Presidential Republic,28.5,188,csv
+GUF,Franch Guyana,840,305,0.106,0.012,1.37,--,0,0,json
+GMB,Gambia,1121,58,0.025,0.013,1.725,Presidential Republic,22.2,3,csv
+GEO,Georgia,9451,254,0.029,0.003,0.456,Semi-Presidential Republic,12.7,15,csv
+DEU,Germany,64193,77,0.058,0.069,0.874,Federal Parliamentary Republic,20.7,183,csv
+GHA,Ghana,13764,49,0.012,0.009,1.394,Presidential Republic,12.9,43,csv
+GRC,Greece,9789,91,0.055,0.029,0.99,Parliamentary Republic,29.6,35,csv
+GRL,Greenland,126,226,0.138,0,0.753,Parliamentary Democracy,0,0,json
+GTM,Guatemala,22907,134,0.103,0.046,2.962,Presidential Republic,49.9,22,csv
+GIN,Guinea,2900,23,0.037,0.063,1.748,Presidential Republic,0,0,json
+GNB,Guinea Buissau,196,10,0.026,0.026,1.022,Presidential Republic,0,0,json
+GUY,Guyana,2113,278,0.035,0.007,1.288,Parliamentary Republic,35.6,5,csv
+HTI,Haiti,10500,96,0.041,0.024,4.544,Semi-Presidential Republic,72,17,csv
+HUN,Hungary,17963,184,0.075,0.004,1.29,Parliamentary Republic,17.8,33,csv
+ISL,Iceland,131,38,0.061,0,0.862,Parliamentary Republic,12.1,5,csv
+IND,India,419623,33,0.043,0,1.144,Federal Parliamentary Republic,67.2,1401,csv
+IDN,Indonesia,225025,86,0.055,0.032,1.827,Republic,31.8,464,csv
+IRN,Iran,225624,284,0.031,0.005,1.612,Republic,25.1,253,csv
+IRQ,Iraq,42880,123,0.026,0.036,1.392,Republic,0,0,json
+IRL,Ireland,3593,75,0.038,0.01,0.841,Republic,0,0,json
+ISR,Israel,21072,265,0.01,0.027,0.801,Republic,25.2,30,csv
+ITA,Italy,57661,95,0.042,0.003,1.142,Republic,34.4,209,csv
+JAM,Jamaica,3866,138,0.047,0.052,0.888,Constituitional Monarchy,23.1,11,csv
+JPN,Japan,56805,45,0.084,0,0.668,Constituitional Monarchy,11,188,csv
+KAZ,Kazakhstan,36343,202,0.076,0.002,0.689,Republic,17.5,86,csv
+KEN,Kenya,53841,114,0.074,0.012,2.017,Republic,40.4,108,csv
+KOS,Kosovo,1849,106,0.025,0.034,0.87,Republic,0,0,json
+KGZ,Kyrgyzstan,10195,166,0.042,0.004,0.585,Republic,23.4,24,csv
+LVA,Latvia,4243,218,0.082,0.01,0.753,Republic,31.5,12,csv
+LBN,Lebanon,6500,128,0.046,0.024,1.857,Republic,59.3,22,csv
+LSO,Lesotho,2073,92,0.036,0.024,0.706,Constitutional Monarchy,19.5,12,csv
+LBR,Liberia,2023,44,0.013,0.01,1.657,Republic,63,15,csv
+LTU,Lithuania,6616,235,0.049,0.007,0.826,Republic,8.6,11,csv
+LUX,Luxembourg,690,115,0.055,0.009,0.97,Constituitional Monarchy,45,2,csv
+MKD,Macedonia,3222,156,0.032,0.007,1.323,Republic,0,0,json
+MDG,Madagascar,22000,88,0.045,0.034,1.93,Republic,53,82,csv
+MWI,Malawi,14018,79,0.011,0.077,2.003,Republic,16.2,30,csv
+MYS,Malaysia,51602,167,0.069,0.022,1.139,Constitutional Monarchy,25.8,47,csv
+MLI,Mali,5209,33,0.028,0.013,2.233,Republic,52.8,58,csv
+MRT,Mauritania,1768,44,0.012,0.031,1.019,Republic,41,18,csv
+MEX,Mexico,208689,169,0.052,0.043,0.979,Executive Republic,39.6,379,csv
+MDA,Moldova,7868,222,0.082,0.003,0.909,Ceremonial Republic,0,0,json
+MNG,Mongolia,7690,262,0.051,0.009,1.244,Executive Republic,14.9,52,csv
+MNE,Montenegro,1131,182,0.031,0.004,0.838,Ceremonial Republic,26.3,3,csv
+MAR,Morocco,80000,227,0.023,0.027,1.578,Executive Constitutional Monarchy,42.4,82,csv
+MOZ,Mozambique,15976,57,0.029,0.086,1.951,Executive Republic,32.9,184,csv
+MMR,Myanmar,79668,145,0.123,0.016,1.443,Executive Republic,0,0,json
+NAM,Namibia,3742,149,0.029,0.002,0.727,Executive Republic,6.6,13,csv
+NPL,Nepal,18881,65,0.073,0.055,1.78,Ceremonial Republic,58.9,74,csv
+NLD,Netherlands,10102,59,0.054,0.012,0.681,Ceremonial Constitutional Monarchy,29.6,54,csv
+NCL,New Caledonia,549,204,0.015,0.031,1.366,French Republic,0,0,json
+NZL,New Zealand,10260,214,0.074,0.006,1.061,Ceremonial Constitutional Monarchy,28,18,csv
+NIC,Nicaragua,10569,171,0.054,0.006,1.28,Executive Republic,12.3,9,csv
+NGA,Nigeria,68259,36,0.02,0.017,1.259,Executive Republic,67.9,240,csv
+NOR,Norway,3933,74,0.064,0.001,0.952,Ceremonial Constitutional Monarchy,25.7,54,csv
+PAK,Pakistan,84315,44,0.018,0.017,1.716,Ceremonial Republic,69.1,88,csv
+PAN,Panama,16151,393,0.055,0,1.139,Executive Republic,62.6,24,csv
+PNG,Papau New Guinea,4945,63,0.05,0.039,1.187,Ceremonial Consititutional Monarchy,0,0,json
+PRY,Paraguay,12741,180,0.065,0.028,1.786,Executive Republic,77.9,16,csv
+PER,Peru,84741,265,0.058,0,2.293,Executive Republic,42.2,69,csv
+PHL,Philippines,178661,172,0.089,0.004,4.36,Executive Republic,63.6,1137,csv
+POL,Poland,73717,194,0.038,0.004,0.9,Executive Republic,8.4,215,csv
+PRT,Portugal,13726,133,0.064,0.001,1.069,Executive Republic,15.3,49,csv
+PRI,Puerto Rico,10475,313,0.036,0.037,0.736,Executive Republic,0,0,json
+COG,Congo,1240,27,0.037,0.044,5.33,Unitary Semi-Presidential Republic,0,0,json
+ROU,Romania,26529,135,0.051,0.013,0.956,Executive Republic,8.3,45,csv
+RUS,Russian Federation,609485,421,0.079,0.002,0.79,Executive Republic,0,0,json
+RWA,Rwanda,54279,434,0.065,0.004,0.956,Executive Republic,6.8,14,csv
+SEN,Senegal,9422,60,0.029,0.02,1.173,Executive Republic,46.5,37,csv
+SRB,Serbia,10065,142,0.036,0.01,1.064,Cermonial Republic,14.5,28,csv
+SLE,Sierra Leone,4179,64,0.033,0,2.16,Executive Republic,56.3,19,csv
+SVK,Slovakia,10247,188,0.07,0.008,0.937,Ceremonial Republic,14.5,18,csv
+SVN,Slovenia,1316,64,0.074,0.005,0.983,Ceremonial Republic,16.7,7,csv
+SLB,Solomon Islands,435,73,0.014,0.059,0.606,Ceremonial Constitutional Monarchy,50.6,6,csv
+ZAF,South Africa,161984,291,0.026,0.002,1.327,Executive Republic,27.9,232,csv
+KOR,South Korea,57451,114,0.065,0.008,1.133,Executive Republic,0,0,json
+ESP,Spain,59678,128,0.075,0,0.809,Ceremonial Constitutional Monarchy,14,82,csv
+LKA,Sri Lanka,16990,78,0.049,0.001,1.906,Executive Republic,55.9,61,csv
+SDN,Sudan,19101,50,0.02,0.02,2.553,Executive Republic,20.4,125,csv
+SUR,Suriname,1000,183,0.028,0.057,0.752,Executive Republic,50,31,csv
+SWZ,Swaziland,3610,282,0.029,0.007,1.272,Executive Absolute Monarchy,18.1,12,csv
+SWE,Sweden,5630,57,0.061,0.003,0.842,Ceremonial Constitutional Monarchy,23.8,79,csv
+CHE,Switzerland,6912,82,0.056,0.003,0.922,Executive Republic,40.2,114,csv
+TWN,Taiwan,62445,265,0.087,0.025,1.148,Constitutional Republic,4.8,49,csv
+TJK,Tajikistan,9317,121,0.016,0.01,0.615,Executive Republic,15,22,csv
+TZA,Tanzania,31382,58,0.034,0.039,1.157,Executive Republic,50,126,csv
+TLS,Timor-Leste,669,56,0.04,0.055,1.373,Constitutional Republic,0,0,json
+TGO,Togo,4427,62,0.027,0.009,1.628,Executive Republic,63.2,12,csv
+TTO,Trinidad and Tobago,3667,270,0.026,0.048,0.751,Ceremonial Republic,60,9,csv
+TUN,Tunisia,23553,206,0.028,0.01,1.389,Executive Republic,52.1,27,csv
+TUR,Turkey,229790,285,0.043,0.012,1.108,Ceremonial Republic,34.5,355,csv
+TKM,Turkmenistan,30568,583,0.065,0.007,0.85,Executive Republic,14,22,csv
+UGA,Uganda,54059,129,0.044,0,2.932,Executive Republic,54.2,249,csv
+UKR,Ukraine,60771,167,0.046,0.007,0.63,Executive Republic,26.8,148,csv
+ARE,United Arab Emirates,9826,104,0.117,0.02,1.589,Executive Absolute Monarchy,38.2,21,csv
+GBR,United Kingdom,95284,360,0.0447,0.0047,0.972,Ceremonial Constitutional Monarchy,0,0,json
+USA,United States,2145100,666,0.098,0.002,1.039,Executive Republic,20.3,4575,csv
+URY,Uruguay,11078,321,0.053,0,1.121,Executiv

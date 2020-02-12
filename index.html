@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#canvas {
+}
+#canvas-svg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1152px;
+    height: 600px;
+}
+.land {
+  fill: #222;
+}
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+.tooltip_key {
+  font-weight: bold;
+}
+.tooltip_value {
+  margin-left: 20px;
+  top: 0;
+  float: right;
+}
+</style>
+</head>
+<body onload="init()">
+<p>You can choose the data set below using the Original and Merged buttons. The original data is from a single source, while the merged data has been cleaned and merged through multiple sources.</p>
+<!-- select filter -->
+<input type="radio" id="originalBtn" name="group1" value="original" onchange="reload()" checked> Original Data<br>
+<input type="radio" id="mergedBtn" name="group1" value="merged" onchange="reload()"> Merged Data
+<p>Filter by: <select onchange="reload()" id="select_id">
+  <option value="population">Prison Population</option>
+  <option value="rate">Prisoner Rate per Capita</option>
+  <option value="females">Female Rate</option>
+  <option value="juveniles">Juvenile Rate</option>
+  <option value="occupancy">Occupancy Rate</option>
+</select></p>
+<p><b>Note: </b>All rates are shown as [value] per 100,000 citizens.</p>
+<!-- tooltip -->
+<div id="tooltip-container"></div>
+<!-- map canvas -->
+<div id="canvas-svg"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+// dataset
+// reload map when selection is changed
+function reload() {
+  location.reload();
+}
+// load csv file
+function init() {
+var dataset = "data.csv";
+if(document.getElementById("mergedBtn").checked) {
+  dataset = "merged_data_final.csv";
+} else {
+  dataset = "data.csv";
+}
+d3.csv(dataset, function(err, data) {
+  // load csv columns into data, labels, colors, and dimensions
+  var config = {"countryData":"country","selectionData":"population",
+              "setBegColor":"#99ccff","setEndColor":"#0050A1",
+              "width":1152,"height":1152};
+  // change value of 'selectionData' when user changes select dropdown
+  config.selectionData = document.getElementById("select_id").value;
+  // set width and height
+  var width = config.width,
+      height = config.height;
+  //set number of colors to use
+  var numColors = 9;
+  // Interpolate is used in conjunction with the following functions to translate colors from hex to rgb
+  function Interpolate(w, x, y, z) {
+      var result = w + (((x - w) / y) * z);
+      return Math.floor(result);
+  }
+  function fCol(x, y, z) {
+      var a,b,c;
+      var setColors = function(x, y, z) {
+          a = x;
+          b = y;
+          c = z;
+      };
+      setColors(x, y, z);
+      this.getColors = function() {
+          var rgb = {
+              r: a,
+              g: b,
+              b: c
+          };
+          return rgb;
+      };
+  }
+  function htr(hex) {
+      // regex
+      var next = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return next ? {
+          r: parseInt(next[1], 16),
+          g: parseInt(next[2], 16),
+          b: parseInt(next[3], 16)
+      } : null;
+  }
+  // format the values (used in tooltips)
+  function formatting(d) {
+    if (d > 1000000) {
+      return Math.round(d / 1000000 * 10) / 10 + " million prisoners";
+    } else if (d > 1000) {
+      return Math.round(d / 1000 * 10) / 10 + " thousand prisoners";
+    } else {
+      return d;
+    }
+  }
+  // color configs
+  var begCol = config.setBegColor, lastCol = config.setEndColor;
+  var rgb = htr(begCol);
+  var strCol = new fCol(rgb.r, rgb.g, rgb.b);
+  rgb = htr(lastCol);
+  var endCol = new fCol(rgb.r, rgb.g, rgb.b);
+  var startColors = strCol.getColors(),
+      endColors = endCol.getColors();
+  var colors = [];
+  for (var i = 0; i < numColors; i++) {
+    var r = Interpolate(startColors.r, endColors.r, numColors, i);
+    var g = Interpolate(startColors.g, endColors.g, numColors, i);
+    var b = Interpolate(startColors.b, endColors.b, numColors, i);
+    colors.push(new fCol(r, g, b));
+  }
+  // use countryData and selectionData from above (line 54) to set key and value
+  var myKey = config.countryData;
+  var myValue = config.selectionData;
+  // use d3.geo library to set map to the Mercator projection
+  var projection = d3.geo.mercator()
+      .scale((width + 1) / 2 / Math.PI)
+      .translate([width / 2, height / 2])
+      .precision(.1);
+  var path = d3.geo.path()
+      .projection(projection);
+  var graticule = d3.geo.graticule();
+  // create the map svg and append to DOM
+  var svg = d3.select("#canvas-svg").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+  svg.append("path")
+      .datum(graticule)
+      .attr("class", "graticule")
+      .attr("d", path);
+
+  var table = {};
+
+  function log10(val) {
+    return Math.log(val);
+  }
+  // map keys to values
+  data.forEach(function(d) {
+    table[d[myKey]] = +d[myValue];
+  });
+  console.log("table variable:");
+  console.log(table);
+
+  // d3.scale.quantize compares rank against value and increases color count as value increases
+  var quantize = d3.scale.quantize()
+      .domain([0, 1.0])
+      .range(d3.range(numColors).map(function(i) { return i }));
+
+  quantize.domain([d3.min(data, function(d){
+      return (+d[myValue]) }),
+    d3.max(data, function(d){
+      return (+d[myValue]) })]);
+
+  // this file is necessary to map the topographical data of the world (country lines)
+  d3.json("https://s3-us-west-2.amazonaws.com/vida-public/geo/world-topo-min.json", function(error, world) {
+    var countries = topojson.feature(world, world.objects.countries).features;
+
+    svg.append("path")
+       .datum(graticule)
+       .attr("class", "choropleth")
+       .attr("d", path);
+
+    var g = svg.append("g");
+
+    g.append("path")
+     .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
+     .attr("class", "equator")
+     .attr("d", path);
+
+    var country = g.selectAll(".country").data(countries);
+
+    // =================================================
+    // list all countries in console
+    /*
+    var objCountries = [];
+    for (var i=0; i<countries.length; i++) {
+      objCountries.push(countries[i].properties.name);
+    };
+    console.log(objCountries);
+    */
+    // ==================================================
+
+    country.enter().insert("path")
+        .attr("class", "country")
+        .attr("d", path)
+        .attr("id", function(d,i) { return d.id; })
+        .attr("title", function(d) { return d.properties.name; })
+        .style("fill", function(d) {
+          if (table[d.properties.name]) {
+            var c = quantize((table[d.properties.name]));
+            var color = colors[c].getColors();
+            return "rgb(" + color.r + "," + color.g +
+                "," + color.b + ")";
+          } else {
+            return "#ccc";
+          }
+        })
+        .on("mousemove", function(d) {
+            var countryIndex = 0;
+            // check hovered country name against all country names in data to find the correct index
+            for (var i=0; i<data.length; i++) {
+              var countryName = data[i].country;
+              if (countryName == d.properties.name) {
+                countryIndex = i;
+              }
+            }
+
+            var html = "";
+
+            html += "<div class=\"tooltip\">";
+            html += "<span class=\"tooltip_key\">" + data[countryIndex].country + " (" + data[countryIndex].acronym + "): </span>";
+            html += "<span id=\"tooltip_value\">" + formatting(data[countryIndex].population) + "</span>";
+            html += "<br><span class=\"tooltip_key\">Prisoner Rate per Capita: </span>";
+            html += "<span id=\"tooltip_value\">" + data[countryIndex].rate + "</span>";
+            html += "<br><span class=\"tooltip_key\">Female Rate: </span>";
+            html += "<span id=\"tooltip_value\">" + data[countryIndex].females + "</span>";
+            html += "<br><span class=\"tooltip_key\">Juvenile Rate: </span>";
+            html += "<span id=\"tooltip_value\">" + data[countryIndex].juveniles + "</span>";
+            html += "<br><span class=\"tooltip_key\">Occupancy Rate: </span>";
+            html += "<span id=\"tooltip_value\">" + data[countryIndex].occupancy + "</span>";
+            html += "<br><span class=\"tooltip_key\">Government: </span>";
+            html += "<span id=\"tooltip_value\">" + data[countryIndex].government + "</span>";
+            html += "</div>";
+
+            $("#tooltip-container").html(html);
+            $(this).attr("fill-opacity", "0.8");
+            $("#tooltip-container").show();
+
+            var coordinates = d3.mouse(this);
+
+            // standard code block to deal with responsive sizes
+            var map_width = $('.choropleth')[0].getBoundingClientRect().width;
+            if (d3.event.pageX < map_width / 2) {
+              d3.select("#tooltip-container")
+                .style("top", (d3.event.layerY + 15) + "px")
+                .style("left", (d3.event.layerX + 15) + "px");
+            } else {
+              var tooltip_width = $("#tooltip-container").width();
+              d3.select("#tooltip-container")
+                .style("top", (d3.event.layerY + 15) + "px")
+                .style("left", (d3.event.layerX - tooltip_width - 30) + "px");
+            }
+        })
+        .on("mouseout", function() {
+                $(this).attr("fill-opacity", "1.0");
+                $("#tooltip-container").hide();
+            });
+
+    g.append("path")
+        .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
+        .attr("class", "boundary")
+        .attr("d", path);
+
+    svg.attr("height", config.height * 2.2 / 3);
+  });
+
+  d3.select(self.frameElement).style("height", (height * 2.3 / 3) + "px");
+});
+}
+
+</script>
+</body>
+</html>
